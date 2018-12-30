@@ -16,7 +16,7 @@ export default class Body extends Component {
 const styles = StyleSheet.create({
     body: {
         flex: .77,
-        backgroundColor: 'blue',
+        // backgroundColor: 'blue',
         flexDirection: 'row',
     },
 });
