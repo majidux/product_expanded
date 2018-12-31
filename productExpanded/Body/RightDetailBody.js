@@ -9,7 +9,7 @@ export default class RightDetailBody extends Component {
                         <Image
                             source={require('../image/pointUp.png')}
                         />
-                        <Text>اطلاعات</Text>
+                        <Text style={{fontWeight: 'bold',fontSize:15}}>اطلاعات</Text>
                     </View>
                     <View style={styles.secondHead}><Text>کاربره (ویرایش پیشرفته) ۵۰۰ بسته</Text></View>
                     <View style={styles.thirdHead}><Text>کاربر اضافه (ویرایش تحت وب)</Text><Text>۱۷</Text></View>

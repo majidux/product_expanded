@@ -16,7 +16,12 @@ export default class RightBody extends Component {
                 <View style={styles.mainBody}>
                     <RightDetailBody/>
                     <RightModuleProduct/>
-                    <View></View>
+                    <View style={styles.suggestModule}>
+                        <Image
+                            source={require('../image/pointDown.png')}
+                        />
+                        <Text style={{fontWeight: 'bold',fontSize:15}}>ماژول های پیشنهادی</Text>
+                    </View>
                 </View>
             </View>
         );
@@ -41,5 +46,15 @@ const styles = StyleSheet.create({
         backgroundColor:'#2fb5ac',
         flexDirection: 'row',
         paddingHorizontal: 20
+    },
+    suggestModule:{
+        flexDirection: 'row',
+        borderWidth: 1,
+        borderColor:'#e7e7e7',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop:10,
+        flex:.1,
+        paddingHorizontal: 25,
     }
 });

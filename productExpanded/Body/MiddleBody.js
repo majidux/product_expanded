@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
         flex: .42,
         paddingLeft: 30,
         paddingTop: 100,
+        backgroundColor:'white'
     },
     contractDate: {
         paddingTop: 17,
