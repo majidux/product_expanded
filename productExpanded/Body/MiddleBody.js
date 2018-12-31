@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
         width: 100,
         height: 8,
         borderRadius: 5,
-        marginBottom: 10
+        marginBottom: 10,
     },
     progressBarIn2: {
         backgroundColor: '#2d3f4f',
