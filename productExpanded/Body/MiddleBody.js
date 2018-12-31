@@ -7,7 +7,7 @@ export default class MiddleBody extends Component {
             <View style={styles.middleBody}>
                 <View style={styles.middleBodyBox}>
                     <View style={styles.contractDate}>
-                        <Text>تاریخ انقضای قرارداد:</Text>
+                        <Text style={{color:'black'}}>تاریخ انقضای قرارداد:</Text>
                     </View>
                     <View style={styles.progressBarViews}>
                         <View style={styles.progressBarWrapper}>
@@ -19,9 +19,27 @@ export default class MiddleBody extends Component {
                         </View>
                     </View>
                     <View style={styles.footer}>
-                        <View style={styles.subFooter}><Text>Hello</Text></View>
-                        <View style={styles.subFooter}><Text>Hello</Text></View>
-                        <View style={styles.subFooter}><Text>Hello</Text></View>
+                        <View style={styles.subFooter}>
+                            <Image
+                                source={require('../image/productDetail.png')}
+                            />
+                            <Text style={styles.textFooter}>جزئیات محصول</Text>
+                        </View>
+                        <View style={styles.subFooter}>
+                            <Image
+                                source={require('../image/poll.png')}
+                            />
+                            <Text style={styles.textFooter}>نظر سنجی</Text></View>
+                        <View style={styles.subFooter}>
+                            <Image
+                                source={require('../image/extendContract.png')}
+                            />
+                            <Text style={styles.textFooter}>تمدید قرارداد</Text></View>
+                        <View style={styles.subFooter}>
+                            <Image
+                                source={require('../image/meetingDemand.png')}
+                            />
+                            <Text style={styles.textFooter}>درخواست جلسه</Text></View>
                     </View>
                 </View>
             </View>
@@ -32,7 +50,6 @@ export default class MiddleBody extends Component {
 
 const styles = StyleSheet.create({
     middleBody: {
-        backgroundColor: 'red',
         flex: .42,
         paddingLeft: 30,
         paddingTop: 100,
@@ -43,7 +60,6 @@ const styles = StyleSheet.create({
     },
     middleBodyBox: {
         flex: .3,
-        backgroundColor: 'wheat',
         borderWidth: 4,
         borderRightWidth: 0,
         borderColor: '#efefef',
@@ -57,6 +73,7 @@ const styles = StyleSheet.create({
         width: 200,
         height: 8,
         borderRadius: 5,
+        marginBottom: 10
     },
     progressBarIn: {
         backgroundColor: '#2d3f4f',
@@ -71,7 +88,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: 100,
         height: 8,
-        borderRadius: 5
+        borderRadius: 5,
+        marginBottom: 10
     },
     progressBarIn2: {
         backgroundColor: '#2d3f4f',
@@ -89,10 +107,10 @@ const styles = StyleSheet.create({
     },
     progressBarViews: {
         // flex:.1,
-        marginLeft:70,
+        marginLeft: 70,
         width: 400,
         flexDirection: 'row',
-        justifyContent:'space-between',
+        justifyContent: 'space-between',
         alignItems: 'center',
         // backgroundColor: 'blue'
         marginBottom: 10,
@@ -106,9 +124,12 @@ const styles = StyleSheet.create({
     },
     subFooter: {
         flex: 1,
-        backgroundColor: 'green',
         alignItems: 'center'
     },
-    
+   textFooter:{
+        fontSize:12,
+       paddingTop:6,
+       color: 'black'
+   }
     
 });
